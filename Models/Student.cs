@@ -11,5 +11,7 @@ namespace rc019415MIS4200.Models
         public string lastName { get; set; }
         public string firstName { get; set; }
 
+        public ICollection<Enrollment> Enrollment { get; set; }
+
     }
 }
