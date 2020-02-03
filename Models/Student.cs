@@ -13,5 +13,12 @@ namespace rc019415MIS4200.Models
 
         public ICollection<Enrollment> Enrollment { get; set; }
 
+        public string fullName
+        {
+            get
+            {
+                return lastName + ", " + firstName;
+            }
+        }
     }
 }
