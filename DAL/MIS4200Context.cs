@@ -14,6 +14,8 @@ namespace rc019415MIS4200.DAL
           
         }
         public DbSet<Student> Student { get; set; }
+
+        public DbSet <Classes> Classes { get; set; }
         public DbSet<Enrollment> Enrollment { get; set; }
 
     }

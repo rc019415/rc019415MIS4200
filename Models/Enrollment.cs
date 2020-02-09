@@ -14,5 +14,9 @@ namespace rc019415MIS4200.Models
         public int studentID { get; set; }
 
         public virtual Student Student { get; set; }
+
+        public int classId { get; set; }
+
+        public virtual Classes Classes { get; set; }
     }
 }
