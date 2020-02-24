@@ -58,7 +58,7 @@ namespace rc019415MIS4200.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.studentID = new SelectList(db.Student, "studentID", "lastName", enrollment.studentID);
+            ViewBag.studentID = new SelectList(db.Student, "studentID", "fullName", enrollment.studentID);
             return View(enrollment);
         }
 
@@ -74,7 +74,7 @@ namespace rc019415MIS4200.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.studentID = new SelectList(db.Student, "studentID", "lastName", enrollment.studentID);
+            ViewBag.studentID = new SelectList(db.Student, "studentID", "fullName", enrollment.studentID);
             return View(enrollment);
         }
 
@@ -91,7 +91,7 @@ namespace rc019415MIS4200.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.studentID = new SelectList(db.Student, "studentID", "lastName", enrollment.studentID);
+            ViewBag.studentID = new SelectList(db.Student, "studentID", "fullName", enrollment.studentID);
             return View(enrollment);
         }
 

@@ -4,7 +4,7 @@
     ViewBag.Title = "Student Index";
 }
 
-<h2>Student Index</h2>
+<h2>Student</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -29,7 +29,7 @@
             @Html.DisplayFor(modelItem => item.firstName)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.studentID }) |
+            @Html.ActionLink("Edit", "Edit", new { id=item.studentID }) <a span class="glyphicon glyphicon-pencil"></a> |
             @Html.ActionLink("Details", "Details", new { id=item.studentID }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.studentID })
         </td>
